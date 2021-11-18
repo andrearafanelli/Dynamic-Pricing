@@ -1,4 +1,4 @@
-# Tesi magistrale Andrea Rafanelli
+# Master thesis
 
 Il file [main.py](dprl/main.py) contiene il ciclo principale per simulare la competizione e
 la funzione che simula il mercato.
