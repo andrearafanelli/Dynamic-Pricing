@@ -105,9 +105,6 @@ def p(prices_historical=None, demand_historical=None, information_dump=None):
     action=np.random.choice(price,20,replace=False)
 
 
-
-
-
     for i in xrange (0,101):
         Transition = {}
         Reward = {}
@@ -128,7 +125,6 @@ def p(prices_historical=None, demand_historical=None, information_dump=None):
         else:
             information_dump['Transition'][i] = Final_state
             information_dump['Reward'][i] = Final_reward
-
 
     mdp = MarkovDecisionProcess(transition=information_dump['Transition'], reward=information_dump['Reward'])
     gamma = 0.7
